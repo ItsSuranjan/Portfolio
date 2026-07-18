@@ -138,7 +138,7 @@ body.dark .header{
 }
 
 .me-content{
-    flex:1;
+    flex:2;
 }
 
 .me h3{
@@ -213,7 +213,7 @@ body.dark .header{
 .about-container{
     max-width:900px;
     margin:auto;
-    text-align:center;
+    text-align:left;
 }
 
 /* Skills */
@@ -246,25 +246,179 @@ body.dark .header{
 /* Experience */
 
 .timeline-item{
-    background:var(--surface);
-    padding:30px;
-    border-left:5px solid var(--primary);
-    border-radius:var(--radius);
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:18px;
+    padding:35px;
     box-shadow:var(--shadow);
+    transition:.35s ease;
+}
+
+.timeline-item:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+}
+
+.timeline-item h3{
+    font-size:2rem;
+    color:var(--heading);
+    margin-bottom:6px;
+}
+
+.timeline-item h4{
+    color:var(--primary);
+    font-size:1.2rem;
+    margin-bottom:8px;
+}
+
+.experience-date{
+    display:block;
+    color:var(--muted);
+    margin-bottom:22px;
+}
+
+.experience-description{
+    color:var(--text);
+    line-height:1.9;
+    margin-bottom:28px;
+}
+
+.timeline-item h5{
+    color:var(--heading);
+    margin:28px 0 18px;
+}
+
+.experience-list{
+    list-style:none;
+    padding:0;
+}
+
+.experience-list li{
+    color:var(--text);
+    display:flex;
+    gap:12px;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.experience-list strong{
+    color:var(--primary);
+}
+
+/* Technology Badges */
+
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.tech-stack span{
+    background:var(--tag-bg);
+    color:var(--tag-text);
+    border:1px solid var(--tag-border);
+    border-radius:30px;
+    padding:8px 16px;
+    font-size:.9rem;
+    transition:.3s;
+}
+
+.tech-stack span:hover{
+    background:var(--primary);
+    color:#fff;
+    border-color:var(--primary);
+    transform:translateY(-3px);
 }
 
 /* Education */
+.education-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
 
-.card{
-    max-width:600px;
-    margin:auto;
-    background:var(--surface);
+.education-card{
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:18px;
     padding:30px;
-    text-align:center;
-    border-radius:var(--radius);
+    display:flex;
+    gap:22px;
+    transition:.35s ease;
     box-shadow:var(--shadow);
 }
 
+.education-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.education-icon{
+    width:70px;
+    height:70px;
+    flex-shrink:0;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(37,99,235,.12);
+    color:var(--primary);
+    font-size:1.8rem;
+}
+
+.education-content{
+    flex:1;
+}
+
+.education-content h3{
+    color:var(--heading);
+    font-size:1.4rem;
+    margin-bottom:6px;
+}
+
+.education-content h4{
+    color:var(--primary);
+    font-size:1rem;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.education-year{
+    display:inline-block;
+    color:var(--muted);
+    margin-bottom:18px;
+    font-size:.95rem;
+}
+
+.education-content p{
+    color:var(--text);
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.education-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.education-tags span{
+    background:var(--tag-bg);
+    color:var(--tag-text);
+    border:1px solid var(--tag-border);
+    border-radius:25px;
+    padding:8px 14px;
+    font-size:.85rem;
+    transition:.3s;
+}
+
+.education-tags span:hover{
+    background:var(--primary);
+    color:#fff;
+    border-color:var(--primary);
+}
 /* Projects */
 
 .project-grid{
