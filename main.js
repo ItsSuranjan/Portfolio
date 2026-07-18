@@ -218,44 +218,25 @@ if (themeToggle) {
     /* ==========================
        Contact Form
     ========================== */
-
     const contactForm = document.querySelector(".contact-form");
-
     contactForm.addEventListener("submit", (e) => {
-
         e.preventDefault();
-
         const inputs = contactForm.querySelectorAll("input, textarea");
-
         let isValid = true;
-
         inputs.forEach(input => {
-
             if (input.value.trim() === "") {
-
                 input.style.border = "2px solid red";
                 isValid = false;
-
             } else {
-
                 input.style.border = "";
-
             }
-
         });
-
         if (!isValid) {
-
             alert("Please fill in all required fields.");
             return;
-
         }
-
         alert("Thank you! Your message has been submitted successfully.");
-
         contactForm.reset();
-
     });
-
 });
 

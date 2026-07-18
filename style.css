@@ -475,7 +475,13 @@ body.dark .header{
     flex-direction:column;
     gap:20px;
 }
-
+.contact-description{
+    text-align:center;
+    color:var(--text-light);
+    font-size:1rem;
+    line-height:1.8;
+    margin-bottom:35px;
+}
 .contact-form input,
 .contact-form textarea{
     width:100%;
