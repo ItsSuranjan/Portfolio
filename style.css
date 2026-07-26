@@ -467,7 +467,6 @@ body.dark .header{
 }
 
 /* Contact */
-
 .contact-form{
     max-width:700px;
     margin:auto;
@@ -493,12 +492,10 @@ body.dark .header{
     font-size:1rem;
     outline:none;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus{
     border-color:var(--primary);
 }
-
 .contact-form button{
     border:none;
     cursor:pointer;

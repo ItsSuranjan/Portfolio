@@ -378,19 +378,36 @@ html
 <!-- ================= CONTACT ================= -->
 <section class="section" id="contact">
     <h2 class="section-title">Contact Me</h2>
-    <form class="contact-form">
+    <form class="contact-form"
+          action="https://formsubmit.co/suranjansarkar88@gmail.com"
+          method="POST">
         <p class="contact-description">
         Have a question or just want to connect?
         Feel free to send me a message. <br>
         I'll get back to you as soon as possible.
         </p>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Subject" required>
-        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Email Address" required>
+
+        <input type="text" name="subject" placeholder="Subject" required>
+
+        <textarea name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required></textarea>
+
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Optional success page -->
+        <input type="hidden" name="_next"
+               value="https://yourdomain.com/thankyou.html">
+
         <button type="submit" class="btn">
             Send Message
         </button>
+
     </form>
 </section>
 
@@ -418,7 +435,6 @@ html
            aria-label="Naukri">
             <i class="fas fa-briefcase"></i>
         </a>
-
 
         <!-- Email -->
         <a href="mailto:suranjansarkar88@gmail.com"
