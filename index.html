@@ -57,26 +57,19 @@ html
 </header>
 
 <!-- ================= me ================= -->
-
 <section class="me" id="home">
-
     <div class="me-content">
-
         <h3>Hello, I'm </h3>
-
         <h1>Suranjan Sarkar</h1>
-
         <h2>Site Reliability Engineer | Azure Cloud Engineer | Infrastructure Automation Enthusiast</h2>
-
         <p>
             I am a Site Reliability Engineer with 3+ years of experience in cloud infrastructure, Linux administration, Infrastructure as Code, and automation. I enjoy building reliable, scalable, and secure systems using Azure, Terraform, Ansible, and modern DevOps practices.
         </p>
-
         <div class="me-buttons">
 
             <a href="#projects" class="btn">View Projects</a>
 
-            <a href="C:\Users\Suranjan Sarkar\Desktop\project\SuranjanSarkar_SRE_APR_Resume.pdf" class="btn secondary" download>
+            <a href="SuranjanSarkar_SRE_APR_Resume.pdf" class="btn secondary" download>
                 Download my Resume
             </a>
 
@@ -86,7 +79,7 @@ html
 
     <div class="me-image">
 
-        <img src="C:\Users\Suranjan Sarkar\Pictures\Suranjan_Sarkar.png" alt="Profile Image">
+        <img src="\Suranjan_Sarkar.png" alt="Profile Image">
 
     </div>
 
@@ -420,8 +413,14 @@ html
                 Responsive portfolio website built with HTML, CSS and JavaScript.
             </p>
             <div class="project-links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
+                <a href="https://github.com/ItsSuranjan/Portfolio"
+                   target="_blank">
+                   GitHub
+                </a>
+                <a href="https://itssuranjan.github.io/Portfolio/"
+                   target="_blank">
+                   Live Demo
+                </a>
             </div>
         </div>
     </div>
@@ -464,10 +463,13 @@ html
 
         <!-- Disable captcha -->
         <input type="hidden" name="_captcha" value="false">
-
+        <!-- Email subject -->
+        <input type="hidden"
+               name="_subject"
+               value="New Portfolio Contact Form Submission">
         <!-- Optional success page -->
         <input type="hidden" name="_next"
-               value="https://yourdomain.com/thankyou.html">
+               value="https://itssuranjan.github.io/Portfolio/">
 
         <button type="submit" class="btn">
             Send Message
@@ -481,15 +483,17 @@ html
 
     <div class="social-links">
         <!-- GitHub -->
-        <a href="https://github.com/your-username"
-           target="_blank"
-           aria-label="GitHub">
+        <a href="https://github.com/ItsSuranjan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub">
             <i class="fab fa-github"></i>
         </a>
 
         <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/suranjan-sarkar-315973244/"
            target="_blank"
+            rel="noopener noreferrer"
            aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
         </a>
@@ -497,6 +501,7 @@ html
         <!-- Naukri -->
         <a href="https://www.naukri.com/mnjuser/profile"
            target="_blank"
+            rel="noopener noreferrer"
            aria-label="Naukri">
             <i class="fas fa-briefcase"></i>
         </a>

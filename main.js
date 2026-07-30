@@ -1,9 +1,4 @@
 
-/* ==========================================
-   main.js
-   Modern Portfolio Website
-========================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     /* ==========================
@@ -148,32 +143,24 @@ if (themeToggle) {
 ========================== */
 
 const contactForm = document.querySelector(".contact-form");
-
     if (contactForm) {
-
         contactForm.addEventListener("submit", (e) => {
-
             const inputs = contactForm.querySelectorAll("input[required], textarea[required]");
             let isValid = true;
-
             inputs.forEach(input => {
-
                 if (input.value.trim() === "") {
                     input.style.border = "2px solid red";
                     isValid = false;
                 } else {
                     input.style.border = "";
                 }
-
             });
-
             if (!Valid) {
                 e.preventDefault();
                 alert("Please fill in all required fields.");
             }
         // If valid, FormSubmit will send the email automatically.
         });
-
     }
 });
 
